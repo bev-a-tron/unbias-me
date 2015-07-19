@@ -9,30 +9,12 @@ var hideUni = function () {
 };
 var $j = jQuery.noConflict();
 
-//alert('hi');
-$j(".xs-none, .sm-block > img").css("display", "none");hideUni();
-//
-////document.addEventListener('DOMContentLoaded', function() {
-//chrome.browserAction.onClicked.addListener(function(tab) {
-//      $(".xs-none, .sm-block > img").css("display", "none");hideUni();
-//      //alert('hi');
-//        console.log('hi running');
-//      chrome.tabs.executeScript({
-//        code: 'alert("hi inside");'
-//      })
-//      //// Hide images
-//      //$(".xs-none, .sm-block > img").css("display", "none");
-//
-//// Hide education, and some other shit.
-//
-//    }
-//);
+// list
+$j(".candidate-info--name, .hover-link").text("I'm a robot");
+$j(".xs-none, .sm-block > img").attr("src", "https://robohash.org/blahblah.png");hideUni();
 
-  //
-  //m.fn.init[186]
-  //document.getElementsByTagName("img").src = "https://robohash.org/blahblah.png";
-  //document.getElementsByClassName("candidate-info--name").innerHTML = "I'm a robot!";
-  //alert('hellooooo!');
-
-//});
-
+// individual profile page
+$j("#profile-photo-image > img").attr("src", "https://robohash.org/blahblah.png");hideUni();
+$j(".profile-educations").css("display", "none");
+$j(".bookmark").next().text("I'm a robot");
+$j(".panel, .question-answer > img").attr("src", "https://robohash.org/blahblah.png");
