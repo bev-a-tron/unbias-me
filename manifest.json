@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Unbias-me",
+  "description": "This extension will replace images with robot images",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "unbias hired.com"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://hired.com/*"],
+      "js": ["jquery.js", "popup.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["popup.js"],
+    "persistent": false
+  }
+}
