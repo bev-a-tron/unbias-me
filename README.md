@@ -2,4 +2,6 @@ This is a thing to replace interviewee photos with robot photos, and interviewee
 
 And, ROBOTS!!!
 
+Our robots are lovingly delivered by Robohash.org. :<3:
+
 ![Robots for hire](/robots_dashboard.png)
