@@ -18,3 +18,4 @@ $j("#profile-photo-image > img").attr("src", "https://robohash.org/blahblah.png"
 $j(".profile-educations").css("display", "none");
 $j(".bookmark").next().text("I'm a robot");
 $j(".panel, .question-answer > img").attr("src", "https://robohash.org/blahblah.png");
+$j(".list-group-item > img").attr("src", "https://robohash.org/blahblah.png");
