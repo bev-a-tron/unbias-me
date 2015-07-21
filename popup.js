@@ -9,9 +9,20 @@ var hideUni = function () {
 };
 var $j = jQuery.noConflict();
 
-// list
+var names = $j(".candidate-info--name.hover-link");
+var pics = $j(".sm-block > img");
+
+// Give each person a robot picture
+pics.each(function(index, element){
+  var name = names[index];
+  $j(element).attr("src", "https://robohash.org/" + names[index].textContent + ".png");
+});
+
+// Change each name to "I'm a robot"
 $j(".candidate-info--name, .hover-link").text("I'm a robot");
-$j(".xs-none, .sm-block > img").attr("src", "https://robohash.org/blahblah.png");hideUni();
+
+// Hide the universities
+hideUni();
 
 // individual profile page
 $j("#profile-photo-image > img").attr("src", "https://robohash.org/blahblah.png");hideUni();
