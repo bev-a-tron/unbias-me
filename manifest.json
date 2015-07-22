@@ -14,12 +14,16 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://hired.com/*"],
-      "js": ["jquery.js", "popup.js"]
+      "matches": ["https://hired.com/list/", "https://hired.com/list", "https://hired.com/list?page=*"],
+      "js": ["jquery.js", "list.js"]
+    },
+    {
+      "matches": ["https://hired.com/list/*?position=*"],
+      "js": ["jquery.js", "individual.js"]
     }
   ],
   "background": {
-    "scripts": ["popup.js"],
+    "scripts": ["list.js"],
     "persistent": false
   }
 }
