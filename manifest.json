@@ -14,7 +14,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://hired.com/list/", "https://hired.com/list", "https://hired.com/list?page=*"],
+      "matches": ["https://hired.com/list/", "https://hired.com/list", "https://hired.com/list?*"],
       "js": ["jquery.js", "list.js"]
     },
     {

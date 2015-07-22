@@ -9,9 +9,6 @@ var hideUni = function () {
 };
 var $j = jQuery.noConflict();
 
-// Hide the universities
-hideUni();
-
 // individual profile page
 var name = $j("h1 div:last")[0].textContent;
 $j("#profile-photo-image > img").attr("src", "https://robohash.org/" + name + ".png");hideUni();
