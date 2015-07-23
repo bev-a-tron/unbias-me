@@ -4,4 +4,4 @@ And, ROBOTS!!!
 
 Our robots are lovingly delivered by Robohash.org. :<3:
 
-![Robots for hire](/robots_dashboard.png)
+![Robots for hire](/robots_dashboard_2.png)
