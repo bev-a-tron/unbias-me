@@ -10,7 +10,7 @@ var hideUni = function () {
 var $j = jQuery.noConflict();
 
 var names = $j(".candidate-info--name.hover-link");
-var pics = $j(".sm-block > img");
+var pics = $j(".candidate-info--photo > img");
 
 var adjectives = new Array();
 adjectives["a"] = "angry";
