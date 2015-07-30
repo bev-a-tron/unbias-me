@@ -10,7 +10,7 @@ var hideUni = function () {
 var $j = jQuery.noConflict();
 
 var names = $j(".candidate-info--name.hover-link");
-var pics = $j(".candidate-info--photo > img");
+var pics = $j(".candidate-info").find("img");
 
 var adjectives = new Array();
 adjectives["a"] = "angry";
@@ -71,11 +71,13 @@ things["z"] = "zebra";
 // Give each person a robot picture
 pics.each(function(index, element){
   var name = names[index];
-  $j(element).attr("src", "https://robohash.org/" + names[index].textContent + ".png");
+  if (name == undefined) {
+    console.log('name is undefined!');
+  } else {
+    $j(element).attr("src", "https://robohash.org/" + name.textContent + ".png");
+  }
 });
 
-// Change each name to "I'm a robot"
-//$j(".candidate-info--name, .hover-link").text("I'm a robot");
 names.each(function(index, element) {
   var name = $j(element)[0].text.trim().toLowerCase().split(" ");
   $j(element).text(adjectives[name[0][0]] + " " + things[name[1][0]]);
