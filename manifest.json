@@ -20,6 +20,10 @@
     {
       "matches": ["https://hired.com/list/*?position=*"],
       "js": ["jquery.js", "individual.js"]
+    },
+    {
+      "matches": ["https://hired.com/more_talent/list"],
+      "js": ["jquery.js", "more_talent.js"]
     }
   ],
   "background": {
